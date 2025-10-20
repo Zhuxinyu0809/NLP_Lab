@@ -17,8 +17,8 @@ This project tackles binary sentiment classification on 2,000 movie reviews usin
 
 | Model | Approach | Kaggle Score | Rank | GPU Required | Training Time |
 |-------|----------|--------------|------|--------------|---------------|
-| **Logistic Regression + BoW** | Traditional ML | 0.813 | - | No | ~25s |
-| **Logistic Regression + TF-IDF** | Traditional ML | 0.813 | - | No | ~25s |
+| **BoW + Logistic Regression** | Traditional ML | 0.813 | - | No | ~25s |
+| **TF-IDF + Logistic Regression** | Traditional ML | 0.813 | - | No | ~25s |
 | **DeBERTa-v3** ⭐ | Pre-trained Transformer | **1.000** | **7th** | Yes (P100) | ~8.5min |
 
 ---
@@ -73,7 +73,7 @@ All models can be run directly on **Kaggle Notebooks** with no local setup requi
 6. Run: `jupyter notebook "BoW + Logistic Regression.ipynb"`
 7. Execute all cells (Ctrl+Enter)
 
-**Kaggle Notebook**: https://www.kaggle.com/code/jujubacon/tf-idf-logistic-regression
+**Kaggle Notebook**: https://www.kaggle.com/code/jujubacon/bow-logistic-regression
 
 **On Kaggle**:
 1. Open the link → Click **"Copy & Edit"**
@@ -190,20 +190,9 @@ All code runs on **Kaggle Notebooks** with pre-installed dependencies:
 **No manual installation required** on Kaggle - just click "Run All"!
 
 
-## 📤 Kaggle Submission Format
+## 📤 Kaggle Submission Files
 
-All prediction files follow this CSV format:
-```csv
-PhraseId,Sentiment
-0,1
-1,0
-2,1
-...
-5000,1
-```
-
-**Submission Files**:
-1. **25118165g_predictions.csv** - Final submission (DeBERTa-v3, Score: 1.000)
+1. **Final_predictions.csv** - Final submission (DeBERTa-v3, Score: 1.000)
 2. **ZHU_Xinyu_25118165g_predictions.csv** - BoW/TF-IDF submissions (Score: 0.813)
 3. **deberta_submission.csv** - DeBERTa-v3 (Score: 1.000, Rank: 7th)
    
@@ -216,21 +205,16 @@ PhraseId,Sentiment
 | **GitHub Repository** | https://github.com/Zhuxinyu0809/NLP_Lab.git |
 | **Kaggle Profile** | https://www.kaggle.com/code/jujubacon |
 | **DeBERTa-v3 Notebook** | https://www.kaggle.com/code/jujubacon/deberta-v3 |
-| **Ensemble Notebook** |  |
+| **TF-IDF +Logistic Regression Notebook** | https://www.kaggle.com/code/jujubacon/tf-idf-logistic-regression |
+| **Bow +Logistic Regression Notebook** | https://www.kaggle.com/code/jujubacon/bow-logistic-regression |
 | **Competition Page** | https://www.kaggle.com/competitions/py-sphere-movie-review-sentiment-challenge |
 
 ---
 
 ## 📧 Contact
 
-**Student**: Xinyu Zhu (朱馨瑜)  
+**Student**: Xinyu Zhu  
 **Student ID**: 25118165g  
 **Course**: COMP5423 Natural Language Processing  
 **Kaggle**: [jujubacon](https://www.kaggle.com/code/jujubacon)  
 **GitHub**: [Zhuxinyu0809](https://github.com/Zhuxinyu0809)
-
----
-
-*This project demonstrates the evolution from traditional NLP techniques to modern transformer-based approaches, achieving state-of-the-art results through systematic experimentation and rigorous evaluation.*
-
-**Note**: This submission fulfills all requirements of COMP5423 Lab1 including code implementation, comprehensive report, Kaggle competition participation, and comparative analysis of multiple approaches.
