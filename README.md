@@ -19,7 +19,7 @@ This project tackles binary sentiment classification on 2,000 movie reviews usin
 |-------|----------|--------------|------|--------------|---------------|
 | **BoW + Logistic Regression** | Traditional ML | 0.813 | - | No | ~25s |
 | **TF-IDF + Logistic Regression** | Traditional ML | 0.813 | - | No | ~25s |
-| **DeBERTa-v3** ⭐ | Pre-trained Transformer | **1.000** | **7th** | Yes (P100) | ~8.5min |
+| **DeBERTa-v3** ⭐ | Pre-trained Transformer | **1.000** | **17th** | Yes (P100) | ~8.5min |
 
 ---
 
@@ -41,7 +41,7 @@ This project tackles binary sentiment classification on 2,000 movie reviews usin
 │
 └── DeBERTa_v3/
     ├── deberta_v3.ipynb                        # Code implementation
-    └── deberta_submission.csv                  # Submission (Score: 1.000, Rank: 7th)
+    └── deberta_submission.csv                  # Submission (Score: 1.000, Rank: 17th)
 ```
 
 ---
@@ -52,7 +52,7 @@ This project tackles binary sentiment classification on 2,000 movie reviews usin
 - **Goal**: Build ML models to predict sentiment (0=negative, 1=positive)
 - **Evaluation Metric**: Accuracy
 - **Competition**: [Kaggle PySphere Movie Review Sentiment Challenge](https://www.kaggle.com/competitions/py-sphere-movie-review-sentiment-challenge)
-- **Final Achievement**: 100% accuracy, ranked 7th on public leaderboard
+- **Final Achievement**: 100% accuracy, ranked 17th on public leaderboard
 
 ---
 
@@ -194,7 +194,7 @@ All code runs on **Kaggle Notebooks** with pre-installed dependencies:
 
 1. **Final_predictions.csv** - Final submission (DeBERTa-v3, Score: 1.000)
 2. **ZHU_Xinyu_25118165g_predictions.csv** - BoW/TF-IDF submissions (Score: 0.813)
-3. **deberta_submission.csv** - DeBERTa-v3 (Score: 1.000, Rank: 7th)
+3. **deberta_submission.csv** - DeBERTa-v3 (Score: 1.000, Rank: 17th)
    
 ---
 
